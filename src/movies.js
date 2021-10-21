@@ -93,7 +93,20 @@ function turnHoursToMinutes(movies) {
 }
 
 // BONUS - Iteration 8: Best yearly score average - Best yearly score average
-function bestYearAvg() {}
+function bestYearAvg(movies) {
+  let sortedMovies = movies.sort(ascRealseYear)
+  let newArr = sortedMovies.map(movie => {
+    if (!newArr.includes(movie.year)) {
+      let input = {
+        year: movie.year,
+        score: movie.score}
+        return input
+    } else {
+        return movie.year.score: movie.year.score += movie.score 
+    }
+  })
+  return newArr
+}
 
 
 
